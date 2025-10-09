@@ -1,0 +1,4 @@
+Directory Contents: 
+C:\Users\Z\Desktop\Code\dev-java\DirectoryFileChallenge\public\assets\icons
+C:\Users\Z\Desktop\Code\dev-java\DirectoryFileChallenge\public\assets\icons\index.txt
+Generated: 2025-05-18T14:48:34.068811100

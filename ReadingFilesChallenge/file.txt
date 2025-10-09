@@ -1,0 +1,32 @@
+computer science, the study of computers and computing, including their theoretical and algorithmic foundations,
+hardware and software, and their uses for processing information. The discipline of computer science includes the
+study of algorithms and data structures, computer and network design, modeling data and information processes, and
+artificial intelligence. Computer science draws some of its foundations from mathematics and engineering and therefore
+incorporates techniques from areas such as queueing theory, probability and statistics, and electronic circuit design.
+Computer science also makes heavy use of hypothesis testing and experimentation during the conceptualization, design,
+measurement, and refinement of new algorithms, information structures, and computer architectures. The major subfields
+of computer science include the traditional study of computer architecture, programming languages, and software development.
+However, they also include computational science (the use of algorithmic techniques for modeling scientific data), graphics
+and visualization, human-computer interaction, databases and information systems, networks, and the social and professional
+issues that are unique to the practice of computer science. As may be evident, some of these subfields overlap in their
+activities with other modern fields, such as bioinformatics and computational chemistry. These overlaps are the consequence
+of a tendency among computer scientists to recognize and act upon their field’s many interdisciplinary connections. Computer
+science emerged as an independent discipline in the early 1960s, although the electronic digital computer that is the object
+of its study was invented some two decades earlier. The roots of computer science lie primarily in the related fields of
+mathematics, electrical engineering, physics, and management information systems.Mathematics is the source of two key concepts
+in the development of the computer—the idea that all information can be represented as sequences of zeros and ones and the
+abstract notion of a “stored program.” In the binary number system, numbers are represented by a sequence of the binary digits
+0 and 1 in the same way that numbers in the familiar decimal system are represented using the digits 0 through 9. The relative
+ease with which two states (e.g., high and low voltage) can be realized in electrical and electronic devices led naturally
+to the binary digit, or bit, becoming the basic unit of data storage and transmission in a computer system. information system,
+an integrated set of components for collecting, storing, and processing data and for providing information, knowledge, and
+digital products. Business firms and other organizations rely on information systems to carry out and manage their operations,
+interact with their customers and suppliers, and compete in the marketplace. Information systems are used to run inter
+organizational supply chains and electronic markets. For instance, corporations use information systems to process financial
+accounts, to manage their human resources, and to reach their potential customers with online promotions. Many major companies
+are built entirely around information systems. These include eBay, a largely auction marketplace; Amazon, an expanding electronic
+mall and provider of cloud computing services; Alibaba, a business-to-business e-marketplace; and Google, a search engine company
+that derives most of its revenue from keyword advertising on Internet searches. Governments deploy information systems to provide
+services cost-effectively to citizens. Digital goods—such as electronic books, video products, and software—and online services,
+such as gaming and social networking, are delivered with information systems. Individuals rely on information systems, generally
+Internet-based, for conducting much of their personal lives: for socializing, study, shopping, banking, and entertainment.
