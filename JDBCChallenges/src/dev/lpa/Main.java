@@ -28,8 +28,10 @@ public class Main {
                 setUpSchema(conn);
             }
 
-            int newOrder = addOrder(conn, new String[] {"Apples", "Bananas", "Oranges"});
-            System.out.println("New Order ID: " + newOrder);
+//            int newOrder = addOrder(conn, new String[] {"Apples", "Bananas", "Oranges"});
+//            System.out.println("New Order ID: " + newOrder);
+
+            deleteOrder(conn, 3);
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
@@ -106,7 +108,7 @@ public class Main {
 
         try (Statement stmt = conn.createStatement()) {
             conn.setAutoCommit(false);
-            int inserts = stmt.executeUpdate(insertOrderAlternative, Statement.RETURN_GENERATED_KEYS);
+            int inserts = stmt.executeUpdate(formattedString, Statement.RETURN_GENERATED_KEYS);
 
             if (inserts == 1) {
                 var rs = stmt.getGeneratedKeys();
@@ -137,6 +139,34 @@ public class Main {
         }
 
         return orderId;
+
+    }
+    
+    private static void deleteOrder(Connection conn, int orderId) throws SQLException {
+        String deleteOrder = "DELETE FROM %s WHERE order_id=%d";
+//        String deleteQuery = deleteOrder.formatted(orderId);
+        String parentQuery = deleteOrder.formatted("storefront.orders", orderId);
+        String childQuery= deleteOrder.formatted("storefront.order_details", orderId);
+
+        try (Statement stmt = conn.createStatement()) {
+            conn.setAutoCommit(false);
+            int deletedRecords = stmt.executeUpdate(childQuery);
+            System.out.printf("No of child records deleted %d%n", deletedRecords);
+
+            deletedRecords = stmt.executeUpdate(parentQuery);
+            if (deletedRecords == 1) {
+                System.out.printf("Order with id %d was deleted successfully" , orderId);
+                conn.commit();
+            } else {
+                conn.rollback();
+            }
+
+        } catch (SQLException e) {
+            conn.rollback();
+            throw new RuntimeException(e);
+        } finally {
+            conn.setAutoCommit(true);
+        }
 
     }
 }
